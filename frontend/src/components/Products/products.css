@@ -1,0 +1,52 @@
+.products{
+    padding: 10px;
+    margin: 8px auto;
+    border-radius: 15px;
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.75);
+
+}
+.products > img{
+    border: none;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.products_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px;
+    margin: 5px 8px;
+}
+.products_info > p{
+    margin-top: 10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.products_info_name{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.products_info_price{
+    color: rgb(36, 190, 36);
+    font-weight: bold;
+    font-size: 17px;
+}
+.products_info > a{
+    margin-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.homeScreen{
+    max-width: 1400px;
+    margin: 10px auto;
+    padding: 1.2rem;
+}
+.homeScreen_title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    margin: 8px 6px;
+}
+.homeScreen_products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%px;
+}
+
+
+@media(max-width: 1200px){
+    .homeScreen_products{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:1000px){
+    .homeScreen_products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:500px){
+    .homeScreen_products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

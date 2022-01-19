@@ -16,9 +16,9 @@ export const cartReducer = (state = {cartItems: []}, action)=>{
                     ...state,
                     //go to cartItems and set the item to new cartItems which sets it to a new array
                     // and check if its the same with the existing item if so add the item in the array else set it to the current item in the array
-                    cartItems: state.cartItems.map((x) => x.product === x.existItem ? item: x)
+                    cartItems: state.cartItems.map((x) => x.product === existItem.product ? item: x),
 
-                }
+                };
             }else{
                 //else it means the item is new so we just push it to the cartItems array
                 return{
@@ -34,10 +34,8 @@ export const cartReducer = (state = {cartItems: []}, action)=>{
                     // filter through the cartItem and select every item which is not the item selected leaving the item from the new array
                     cartItems: state.cartItems.filter((x)=> x.product !== action.payload)
 
-                }
-
-
-        default:
-            return state;
+                };
+            default:
+                return state;
     }
 }
